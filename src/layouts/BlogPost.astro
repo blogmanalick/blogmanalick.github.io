@@ -5,15 +5,43 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import { SITE_URL } from '../consts';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & {
+	langLinks?: {
+		pt?: string;
+		en?: string;
+		es?: string;
+	};
+};
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, langLinks } = Astro.props;
+
+// Determinar idioma atual
+const currentLang = Astro.url.pathname.startsWith('/en/') ? 'en' 
+	: Astro.url.pathname.startsWith('/es/') ? 'es' 
+	: 'pt';
+
+// Construir links para outros idiomas
+const getLangHref = (lang: string, slug: string) => {
+	if (lang === 'pt') return `/posts/${slug}`;
+	return `/${lang}/posts/${slug}`;
+};
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
+		{langLinks && (
+				Object.entries(langLinks).map(([lang, slug]) => {
+					const isDefaultLang = lang === 'pt';
+					const hreflang = isDefaultLang ? 'pt-BR' : lang;
+					const href = isDefaultLang
+						? `${SITE_URL}/${slug}`
+						: `${SITE_URL}/${lang}/${slug}`;
+					return <link rel="alternate" hreflang={hreflang} href={href} />
+				})
+		)}
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -26,7 +54,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
-				border-radius: 12px;
+				border-radius: var(--border-radius);
 				box-shadow: var(--box-shadow);
 			}
 			.prose {
@@ -52,6 +80,31 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+			.lang-switcher {
+				margin-bottom: 1em;
+				padding: 0.5em 1em;
+				background: rgba(var(--gray), 5%);
+				border-radius: var(--border-radius);
+				display: flex;
+				align-items: center;
+				gap: 0.5em;
+				flex-wrap: wrap;
+			}
+			.lang-switcher span {
+				margin-right: 0.5em;
+			}
+			.lang-switcher a {
+				padding: 0 1em;
+				border-radius: var(--border-radius);
+				text-decoration: none;
+				color: rgb(var(--black));
+				transition: all 0.2s ease;
+			}
+			.lang-switcher a:hover,
+			.lang-switcher a.active {
+				background: rgba(var(--accent), 10%);
+				color: rgb(var(--accent));
+			}
 		</style>
 	</head>
 
@@ -63,13 +116,32 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
 				</div>
 				<div class="prose">
+					{langLinks && (
+						<div class="lang-switcher">
+							<span>🌐</span>
+							{
+								Object.entries(langLinks).map(([lang, slug]) => {
+									const href = getLangHref(lang, slug);
+									const labels = { pt: 'Português', en: 'English', es: 'Español' };
+									return (
+										<a 
+											href={href}
+											class={currentLang === lang ? 'active' : ''}
+										>
+											{labels[lang as keyof typeof labels]}
+										</a>
+									);
+								})
+							}
+						</div>
+					)}
 					<div class="title">
 						<div class="date">
-							<FormattedDate date={pubDate} />
+							<FormattedDate date={pubDate} locale={currentLang === 'pt' ? 'pt-BR' : currentLang === 'en' ? 'en' : 'es'} />
 							{
 								updatedDate && (
 									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
+										{currentLang === 'pt' ? 'Atualizado em' : currentLang === 'en' ? 'Last updated on' : 'Actualizado el'} <FormattedDate date={updatedDate} locale={currentLang === 'pt' ? 'pt-BR' : currentLang === 'en' ? 'en' : 'es'} />
 									</div>
 								)
 							}

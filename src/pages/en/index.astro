@@ -1,46 +1,46 @@
 ---
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '../consts';
-import '../styles/index.css';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '../../consts';
+import '../../styles/index.css';
 
-const locale = 'pt-br';
+const locale = 'en';
 const posts = (await getCollection('blog', ({ id }) => id.startsWith(`${locale}/`))).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<link rel="alternate" hreflang="en" href={`${SITE_URL}/en/`} />
-		<link rel="alternate" hreflang="es" href={`${SITE_URL}/es/`}/>
+		<link rel="alternate" hreflang="pt-br" href={`${SITE_URL}/`} />
+		<link rel="alternate" hreflang="es" href={`${SITE_URL}/es/`} />
 	</head>
 	<body>
 		<Header />
 		<main>
 			<div class="lang-switcher">
 				<span>🌐</span>
-				<a href="/en/">English</a>
+				<a href="/">Português</a>
 				<a href="/es/">Español</a>
 			</div>
-			<section>
-				<ul class="post-list">
+			<ul class="post-list">
+				<ul>
 					{
 						posts.map((post) => (
 							<li>
-								<a href={`/posts/${post.id.replace('pt-br/', '')}/`}>
+								<a href={`/en/posts/${post.id.replace('en/', '')}/`}>
 									{post.data.heroImage && (
 										<Image width={720} height={360} src={post.data.heroImage} alt="" />
 									)}
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
-										<FormattedDate date={post.data.pubDate} locale="pt-BR" />
+										<FormattedDate date={post.data.pubDate} locale="en" />
 									</p>
 								</a>
 							</li>
@@ -52,3 +52,4 @@ const posts = (await getCollection('blog', ({ id }) => id.startsWith(`${locale}/
 		<Footer />
 	</body>
 </html>
+

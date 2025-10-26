@@ -1,17 +1,38 @@
 ---
 interface Props {
 	date: Date;
+	locale?: string;
 }
 
-const { date } = Astro.props;
+const { date, locale = 'pt-BR' } = Astro.props;
+
+// Formatação de data por idioma
+const localeFormats: Record<string, Intl.DateTimeFormatOptions> = {
+	'pt-BR': {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+	},
+	'pt': {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+	},
+	'en': {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+	},
+	'es': {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+	},
+};
+
+const format = localeFormats[locale] || localeFormats['pt-BR'];
 ---
 
 <time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString('en-us', {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric',
-		})
-	}
+	{date.toLocaleDateString(locale, format)}
 </time>
