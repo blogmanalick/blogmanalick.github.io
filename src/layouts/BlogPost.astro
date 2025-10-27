@@ -58,12 +58,14 @@ const getLangHref = (lang: string, slug: string) => {
 				box-shadow: var(--box-shadow);
 			}
 			.prose {
-				width: 720px;
+				width: 1200px;
 				max-width: calc(100% - 2em);
 				margin: auto;
 				padding: 1em;
 				color: rgb(var(--gray-dark));
 			}
+
+			.prose p { margin-bottom: 2em; }
 			.title {
 				margin-bottom: 1em;
 				padding: 1em 0;
@@ -113,7 +115,7 @@ const getLangHref = (lang: string, slug: string) => {
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
+					{heroImage && <Image width={1200} src={heroImage} alt="" />}
 				</div>
 				<div class="prose">
 					{langLinks && (
