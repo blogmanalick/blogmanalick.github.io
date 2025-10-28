@@ -5,6 +5,7 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
+import LangSwitcher from '../../components/LangSwitcher.astro';
 import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '../../consts';
 import '../../styles/index.css';
 
@@ -24,13 +25,8 @@ const posts = (await getCollection('blog', ({ id }) => id.startsWith(`${locale}/
 	<body>
 		<Header />
 		<main>
-			<div class="lang-switcher">
-				<span>🌐</span>
-				<a href="/">Português</a>
-				<a href="/es/">Español</a>
-			</div>
-			<ul class="post-list">
-				<ul>
+			<section>
+				<ul class="post-list">
 					{
 						posts.map((post) => (
 							<li>

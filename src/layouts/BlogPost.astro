@@ -1,11 +1,11 @@
 ---
-import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
-import { SITE_URL } from '../consts';
+import LangSwitcher from '../components/LangSwitcher.astro';
+import "./BlogPost.css"
 
 type Props = CollectionEntry<'blog'>['data'] & {
 	langLinks?: {
@@ -21,123 +21,19 @@ const { title, description, pubDate, updatedDate, heroImage, langLinks } = Astro
 const currentLang = Astro.url.pathname.startsWith('/en/') ? 'en' 
 	: Astro.url.pathname.startsWith('/es/') ? 'es' 
 	: 'pt';
-
-// Construir links para outros idiomas
-const getLangHref = (lang: string, slug: string) => {
-	if (lang === 'pt') return `/posts/${slug}`;
-	return `/${lang}/posts/${slug}`;
-};
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-		{langLinks && (
-				Object.entries(langLinks).map(([lang, slug]) => {
-					const isDefaultLang = lang === 'pt';
-					const hreflang = isDefaultLang ? 'pt-BR' : lang;
-					const href = isDefaultLang
-						? `${SITE_URL}/${slug}`
-						: `${SITE_URL}/${lang}/${slug}`;
-					return <link rel="alternate" hreflang={hreflang} href={href} />
-				})
-		)}
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: var(--border-radius);
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 1200px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-
-			.prose p { margin-bottom: 2em; }
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-			.lang-switcher {
-				margin-bottom: 1em;
-				padding: 0.5em 1em;
-				background: rgba(var(--gray), 5%);
-				border-radius: var(--border-radius);
-				display: flex;
-				align-items: center;
-				gap: 0.5em;
-				flex-wrap: wrap;
-			}
-			.lang-switcher span {
-				margin-right: 0.5em;
-			}
-			.lang-switcher a {
-				padding: 0 1em;
-				border-radius: var(--border-radius);
-				text-decoration: none;
-				color: rgb(var(--black));
-				transition: all 0.2s ease;
-			}
-			.lang-switcher a:hover,
-			.lang-switcher a.active {
-				background: rgba(var(--accent), 10%);
-				color: rgb(var(--accent));
-			}
-		</style>
 	</head>
-
 	<body>
 		<Header />
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1200} src={heroImage} alt="" />}
-				</div>
 				<div class="prose">
-					{langLinks && (
-						<div class="lang-switcher">
-							<span>🌐</span>
-							{
-								Object.entries(langLinks).map(([lang, slug]) => {
-									const href = getLangHref(lang, slug);
-									const labels = { pt: 'Português', en: 'English', es: 'Español' };
-									return (
-										<a 
-											href={href}
-											class={currentLang === lang ? 'active' : ''}
-										>
-											{labels[lang as keyof typeof labels]}
-										</a>
-									);
-								})
-							}
-						</div>
-					)}
 					<div class="title">
+						<h1>{title}</h1>
 						<div class="date">
 							<FormattedDate date={pubDate} locale={currentLang === 'pt' ? 'pt-BR' : currentLang === 'en' ? 'en' : 'es'} />
 							{
@@ -148,7 +44,9 @@ const getLangHref = (lang: string, slug: string) => {
 								)
 							}
 						</div>
-						<h1>{title}</h1>
+						{langLinks && (
+							<LangSwitcher prefix='posts' langLinks={langLinks} />
+						)}
 						<hr />
 					</div>
 					<slot />

@@ -20,10 +20,11 @@
 		0 2px 6px rgba(139, 92, 246, 15%), 0 8px 24px rgba(139, 92, 246, 20%), 0 16px 32px
 		rgba(139, 92, 246, 25%);
 	--border-radius: 4px;
+	--content-width: 1200px;
 }
 
 body {
-	font-family: "Lora", serif;
+	font-family: "Merriweather", serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;

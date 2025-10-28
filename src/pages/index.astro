@@ -24,11 +24,6 @@ const posts = (await getCollection('blog', ({ id }) => id.startsWith(`${locale}/
 	<body>
 		<Header />
 		<main>
-			<div class="lang-switcher">
-				<span>🌐</span>
-				<a href="/en/">English</a>
-				<a href="/es/">Español</a>
-			</div>
 			<section>
 				<ul class="post-list">
 					{
