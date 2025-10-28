@@ -4,8 +4,9 @@ description: 'Un post de opinión sobre los últimos cambios en commander'
 pubDate: '31 Oct 2025'
 heroImage: '../../../assets/commander-brackets-update-october-2025.png'
 langLinks:
-  en: 'commander-brackets-update-october-2025'
   pt: 'commander-brackets-atualizacao-outubro-2025'
+  en: 'commander-brackets-update-october-2025'
+  es: 'commander-brackets-actualizacion-octubre-2025'
 ---
 
 ¡Hola gente! ✌️
@@ -14,28 +15,28 @@ Hace unos días, [Gavin Verhey](https://magic.wizards.com/en/news/archive?author
 
 > Este es un post de opinión, con una visión de mesas casuales, principalmente grupos 2 y 3. Esta opinión no representa a Wizards o ninguna comunidad específica, tampoco es una verdad absoluta escrita en piedra.
 
-Vamos a destrinchar algunos puntos relevantes de estos cambios y cómo esto impacta el formato.
+Vamos a desmenuzar algunos puntos relevantes de estos cambios y cómo esto impacta el formato.
 
 ## Expectativa de turnos jugados
 
-Una de las novedades de esta actualización fue la adición de una expectativa de turnos jugados para cada grupo, una manera muy objetiva de decir qué tan rápida o explosiva debe ser un partido.
+Una de las novedades de esta actualización fue la adición de una expectativa de turnos jugados para cada grupo, una manera muy objetiva de decir qué tan rápida o explosiva debe ser una partida.
 
 La propuesta actual dice que, antes de ganar o perder, esperas jugar por:
 
 |||
-| --------- | -------------------------- |
+| --------- | ------------------------ |
 | Grupo 1 | al menos **nueve turnos**  |
 | Grupo 2 | al menos **ocho turnos**   |
 | Grupo 3 | al menos **seis turnos**   |
 | Grupo 4 | al menos **cuatro turnos** |
 
-Ya al jugar en el grupo 5, esperas que el partido pueda **terminar en cualquier momento**.
+Ya al jugar en el grupo 5, esperas que la partida pueda **terminar en cualquier momento**.
 
 > "¡Ah! ¿Quiere decir que si Wizards lanza una carta rota con una interacción que termina el juego en el turno uno, va a ser válida en el cEDH!?"
 
 ¡Sí! Un sonoro y retumbante **SÍ**. No hay nada de malo con eso — al fin y al cabo estamos hablando de cEDH. Si la carta es tan problemática, será prohibida ~así espero~.
 
-## Simplificando la Lista Cartas Decisivas
+## Simplificando la Lista de Cartas Decisivas
 
 Recapitulando qué son las cartas decisivas:
 
@@ -65,9 +66,9 @@ Un cambio relativamente simple, pero que refuerza un punto muy básico del Comma
 
 ### Coste y recompensa
 
-Ahora que tenemos la expectativa de duración del partido, queda aún más claro que, si haces una magia de ocho, nueve o diez manás, se espera que sea una magia de gran impacto y **muy probablemente** el juego estará encaminándose al final.
+Ahora que tenemos la expectativa de duración del partido, queda aún más claro que, si haces una hechizos de ocho, nueve o diez maná, se espera que sea un hechizo de gran impacto y **muy probablemente** el juego estará encaminándose al final.
 
-Con esto en mente, [Expropriate](https://scryfall.com/card/cn2/30/expropriate), [Jin-Gitaxias, Core Augur](https://scryfall.com/card/ima/62/jin-gitaxias-core-augur), [Sway of the Stars](https://scryfall.com/card/bok/54/sway-of-the-stars) y [Vorinclex, Voice of Hunger](https://scryfall.com/card/ima/189/vorinclex-voice-of-hunger) están dejando la Lista de Cartas Decisivas. Estas cartas tienen coste entre 8 y 10 manás; se espera que, para conjurar una de ellas, el jugador gaste todos sus recursos o dependa de una secuencia de cartas que viabilice la jugada. Por lo tanto, dado el alto inversión, es esperado que causen un alto impacto.
+Con esto en mente, [Expropriate](https://scryfall.com/card/cn2/30/expropriate), [Jin-Gitaxias, Core Augur](https://scryfall.com/card/ima/62/jin-gitaxias-core-augur), [Sway of the Stars](https://scryfall.com/card/bok/54/sway-of-the-stars) y [Vorinclex, Voice of Hunger](https://scryfall.com/card/ima/189/vorinclex-voice-of-hunger) están dejando la Lista de Cartas Decisivas. Estas cartas tienen coste entre 8 y 10 manás; se espera que, para conjurar una de ellas, el jugador gaste todos sus recursos o dependa de una secuencia de cartas que viabilice la jugada. Por lo tanto, dada la alta inversión, es esperado que causen un alto impacto.
 
 <div class="centering">
 <img class="card-image" width="336px" height="468px" alt="Vorinclex, Voice of Hunger" src="https://cards.scryfall.io/large/front/9/f/9fe3af8c-109d-486c-aa34-3f023abda5b7.jpg?1761053659" />
@@ -75,17 +76,17 @@ Con esto en mente, [Expropriate](https://scryfall.com/card/cn2/30/expropriate), 
 
 > "¿Quiere decir que va a haber mazo de Vorinclex en el grupo 2!?"
 
-En realidad, **no**. Aunque no hace parte de la lista, Vorinclex se encaja en la categoría de _"mass land denial"_ (negación de tierras en masa), así como [Armageddon](https://scryfall.com/card/a25/5/armageddon), y esta característica hace que solo pueda entrar a partir del grupo 4. Es importante entender estos pequeños matices: el objetivo de la Lista de Cartas Decisivas no es ser una redundancia de las reglas ya explícitas en cada grupo.
+En realidad, **no**. Aunque no forma parte de la lista, Vorinclex se encaja en la categoría de _"mass land denial"_ (negación de tierras en masa), así como [Armageddon](https://scryfall.com/card/a25/5/armageddon), y esta característica hace que solo pueda entrar a partir del grupo 4. Es importante entender estos pequeños matices: el objetivo de la Lista de Cartas Decisivas no es ser una redundancia de las reglas ya explícitas en cada grupo.
 
 ### Sin restricción de tutores para los grupos 1 y 2
 
-¡Esta es una mudanza de aplaudir en pie! Quien vio la primera versión de los grupos se encontró con el término "few tutors" en los grupos 1 y 2, pero ¿qué significa exactamente "pocos tutores"? ¿Qué cartas se encajan como tutor? Y, al fin, ¿cuánto es considerado poco?
+¡Este es un cambio de aplaudir en pie! Quien vio la primera versión de los grupos se topó con el término "few tutors" en los grupos 1 y 2, pero ¿qué significa exactamente "pocos tutores"? ¿Qué cartas se encajan como tutor? Y, al fin, ¿cuánto es considerado poco?
 
 Este tipo de recomendación tan vaga es pésima y no deja claro qué se debe esperar. Si una carta es problemática para estos grupos, que vaya directo para la Lista de Cartas Decisivas. Por eso, solo puedo ver esta mudanza con buenos ojos.
 
 ## Discusiones en abierto
 
-Gavin se encargó de dejar algunas "puntas sueltas" en el artículo, puntos para la comunidad reflexionar y discutir. De cierta forma, existe al menos una tentativa de oír más a la comunidad y buscar feedback. Vale dar una oportunidad.
+Gavin se encargó de dejar algunas "puntas sueltas" en el artículo, puntos para la comunidad reflexionar y discutir. De cierta forma, existe al menos una tentativa de oír más a la comunidad y buscar feedback. Vale la pena darle una oportunidad.
 
 ### ¿Vas a pagar 1?
 
@@ -122,7 +123,7 @@ Para muchas personas, probablemente la respuesta es **sí**. Por más que alguno
 
 [^2]: ["Do You Pay The One?" Wall Scroll](https://store.commandzone.com/products/do-you-pay-the-one-wall-scroll) Command Zone Store
 
-En este tópico, me gustaría hacer una mención honrosa (¿o sería deshonrosa?) a [Charismatic Conqueror](https://scryfall.com/card/lcc/70/charismatic-conqueror), otra carta con diseño semejante. Aunque no genere una ventaja directa en recursos, sino en presencia de campo con fichas de criaturas, esta carta también genera una interrupción constante a cada acción. Este tipo de mecánica fuerza partidos naturalmente más lentos al añadir una capa de decisión a cada jugada y tal vez debería ficar distante de los grupos más bajos.
+En este tópico, me gustaría hacer una mención honrosa (¿o sería deshonrosa?) a [Charismatic Conqueror](https://scryfall.com/card/lcc/70/charismatic-conqueror), otra carta con diseño semejante. Aunque no genere una ventaja directa en recursos, sino en presencia de campo con fichas de criaturas, esta carta también genera una interrupción constante a cada acción. Este tipo de mecánica fuerza partidos naturalmente más lentos al añadir una capa de decisión a cada jugada y tal vez debería mantenerse alejada de los grupos más bajos.
 
 ### Saturación de Thassa
 
@@ -134,7 +135,7 @@ Una de las condiciones de victoria más comunes (si no la más común) en los ma
 
 El punto aquí es diferente del caso de Rhystic Study: la duda en abierto es cuánto esta carta está presente en mesas más casuales y, caso esté, cuán "opresiva" debe ser. ¿Juegos de mesas casuales están siendo interrumpidos prematuramente por un combo de Thassa's Oracle?
 
-Aunque sea un cuestionamiento loable del panel, el problema de esta carta parece ser un poco diferente. En mesas casuales, sin las otras piezas del combo, Thassa's Oracle parece apenas tediosa. Recordando que, por ser una carta decisiva, lo más casual posible es el grupo 3, entonces su real presencia está en los grupos 4 y 5, que ~al menos en teoría~ no deberían preocuparse tanto con jugadas explosivas y opresivas. ¿Un partido terminando en el turno 6 con Thassa's Oracle es realmente algo preocupante?
+Aunque sea un cuestionamiento loable del panel, el problema de esta carta parece ser un poco diferente. En mesas casuales, sin las otras piezas del combo, Thassa's Oracle parece apenas tediosa. Recordando que, por ser una carta decisiva, lo más casual posible es el grupo 3, entonces su real presencia está en los grupos 4 y 5, que ~al menos en teoría~ no deberían preocuparse tanto con jugadas explosivas y opresivas. ¿Una partida terminando en el turno 6 con Thassa's Oracle es realmente algo preocupante?
 
 Si Thassa's Oracle fuera prohibida, el impacto mayor será en los formatos competitivos, que tal vez ganen más variedad. De cualquier forma, decisiones sobre el futuro de esta carta deberían estar alineadas al ambiente en que es usada, y no apenas a un grupo específico donde no parece ser la condición de victoria más viable.
 
@@ -168,7 +169,7 @@ Y convenimos, ya no es exactamente simple explicar para nuevos jugadores la dife
 
 Levantar este tópico ahora parece estar directamente ligado a la primera colección de 2026, [Lorwyn Eclipsed](https://magic.wizards.com/es-ES/products/lorwyn-eclipsed), que traerá más cartas de maná híbrido para el formato.
 
-Con el _power creep_ exponencial y el tiempo cada vez menor entre colecciones, permitir maná híbrido ignorando la identidad de color en la construcción tiende a crear una legión de cartas genericamente buenas, que pueden entrar en innúmeros mazos. Lo que a primera vista parece libertad, puede acabar volviendo los mazos más repetitivos.
+Con el _power creep_ exponencial y el tiempo cada vez menor entre colecciones, permitir maná híbrido ignorando la identidad de color en la construcción tiende a crear una legión de cartas genéricamente buenas, que pueden entrar en incontables mazos. Lo que a primera vista parece libertad, puede acabar volviendo los mazos más repetitivos.
 
 ## Y cómo queda el commander en 2026
 
@@ -178,7 +179,8 @@ Es positivo ver que ideas aún en abierto están siendo compartidas con la comun
 
 Aún con la impresión de que Commander quedó "medio de lado" en las últimas colecciones, la lectura de este artículo es un sutil soplo de esperanza de que aún existen ojos atentos al formato que conquistó tantos jugadores.
 
-Para finalizar dejo el resumen gráfico[^3] hecho por [Rachel Weeks](https://bsky.app/profile/wachelreeks.com).
+
+Para finalizar dejo el resumen gráfico[^3] elaborado por [Rachel Weeks](https://bsky.app/profile/wachelreeks.com).
 
 [^3]: [Post de Rachel Weeks en Bluesky](https://bsky.app/profile/wachelreeks.com/post/3m3ptspaivs27) compartiendo la actualización de los grupos
 

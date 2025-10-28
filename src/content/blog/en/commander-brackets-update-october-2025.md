@@ -4,23 +4,24 @@ description: 'An opinion post about the latest changes in commander'
 pubDate: '31 Oct 2025'
 heroImage: '../../../assets/commander-brackets-update-october-2025.png'
 langLinks:
-  es: 'commander-brackets-actualizacion-octubre-2025'
   pt: 'commander-brackets-atualizacao-outubro-2025'
+  en: 'commander-brackets-update-october-2025'
+  es: 'commander-brackets-actualizacion-octubre-2025'
 ---
 
 Hey folks! ✌️
 
-A few days ago, [Gavin Verhey](https://magic.wizards.com/en/news/archive?author=5m1u9U8j4A5Q8XLlASAsjK) published on Wizards' official site the article "[Commander Brackets Beta Update – October 21, 2025](https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-october-21-2025)". With a patch notes vibe, this article describes some changes in the brackets philosophy, updates to the [Game Changer list](https://scryfall.com/search?q=is%3Agc) and leaves some open questions for the community.
+A few days ago, [Gavin Verhey](https://magic.wizards.com/en/news/archive?author=5m1u9U8j4A5Q8XLlASAsjK) published on Wizards' official site the article "[Commander Brackets Beta Update – October 21, 2025](https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-october-21-2025)". With a patch notes vibe, this article describes some changes in the philosophy behind the brackets, updates to the [Game Changer List](https://scryfall.com/search?q=is%3Agc) and leaves some open questions for the community.
 
 > This is an opinion post, with a view of casual tables, mainly brackets 2 and 3. This opinion does not represent Wizards or any specific community, nor is it an absolute truth written in stone.
 
-Let's break down some relevant points of these changes and how this impacts the format.
+Let's break down some relevant points and how these changes impact the format.
 
 ## Expected turns played
 
 One of the novelties of this update was the addition of an expected number of turns played for each bracket, a very objective way of saying how fast or explosive a match should be.
 
-The current proposal says that, before winning or losing, you expect to play for:
+The current proposal says that, before winning or losing, you can expect to play:
 
 |||
 | --------- | ------------------------ |
@@ -45,7 +46,7 @@ Recapping what Game Changers are:
 
 [^1]: [Official page](https://magic.wizards.com/en/formats/commander#gamechangers) of the Commander format.
 
-Knowing this, the panel members decided to reduce the volume of cards in the list. Which, at the end of the day, ends up simplifying players' lives, gives more deck building options and avoids some redundancies.
+Knowing this, the panel members decided to reduce the number of cards in the list. Which, at the end of the day, ends up simplifying players' lives, gives more deck building options and avoids some redundancies.
 
 ### Powerful legends in the command zone
 
@@ -61,7 +62,7 @@ Memes and jokes aside, if you consider all the restrictions of each bracket and 
 
 Other cards that are just ~unbearably annoying~ unpleasant to play, like our unbeloved [Grand Arbiter Augustin IV](https://scryfall.com/card/2x2/221/grand-arbiter-augustin-iv), or powerful both in the command zone and in the 99, like [Braids, Cabal Minion](https://scryfall.com/card/mh2/273/braids-cabal-minion) and [Tergrid, God of Fright](https://scryfall.com/card/khm/112/tergrid-god-of-fright-tergrids-lantern), remain on the list.
 
-A relatively simple change, but one that reinforces a very basic point of Commander: it's a collective game — talk before playing and align deck expectations.
+A relatively simple change, but one that reinforces a very basic point of Commander: it's a collective game — talk before playing and align expectations.
 
 ### Cost and reward
 
@@ -79,15 +80,15 @@ Actually, **no**. Although it's not on the list, Vorinclex fits into the _"mass 
 
 ### No tutor restrictions for brackets 1 and 2
 
-This is a change worth standing ovation! Whoever saw the first version of the brackets came across the term "few tutors" in brackets 1 and 2, but what exactly does "few tutors" mean? Which cards qualify as tutors? And, after all, how much is considered few?
+This is a change worth a standing ovation! Anyone who saw the first version of the brackets encountered the term "few tutors" in brackets 1 and 2, but what exactly does "few tutors" mean? Which cards qualify as tutors? And, after all, how much is considered few?
 
 This kind of recommendation is terrible and doesn't make clear what should be expected. If a card is problematic for these brackets, it should go straight to the Game Changer List. That's why I can only see this change favorably.
 
 ## Open discussions
 
-Gavin made sure to leave some "loose ends" in the article, points for the community to reflect on and discuss. In a way, there's at least an attempt to listen more to the community and seek feedback. It's worth giving it a shot.
+Gavin made sure to leave some "loose ends" in the article, points for the community to reflect on and discuss. In a way, there's at least an attempt to an attempt to listen to the community and seek feedback. It's worth giving it a shot.
 
-### Are you going to pay 1?
+### Do you pay the one?
 
 <div class="centering">
 <figure>
@@ -104,7 +105,7 @@ The Command Zone -  Wall Scroll[^2]
 </div>
 
 
-[Rhystic Study](https://scryfall.com/card/jmp/169/rhystic-study) is the iconic card that generates infinite memes and play interruptions. Just a quick Google Images search for "Do you pay the one?" to understand that this card accumulates love and hate wherever it goes.
+[Rhystic Study](https://scryfall.com/card/jmp/169/rhystic-study) is the iconic card that generates endless memes and play interruptions. Just a quick Google Images search for "Do you pay the one?" to understand that this card accumulates love and hate wherever it goes.
 
 Although it's a Game Changer, its potential for constant value generation still seems to keep the panel wondering. Should Rhystic Study be banned?
 
@@ -114,7 +115,7 @@ Although it's a Game Changer, its potential for constant value generation still 
 
 Although detestable to some, just like its younger sisters [Smothering Tithe](https://scryfall.com/card/cmm/57/smothering-tithe) and [Esper Sentinel](https://scryfall.com/card/mh2/12/esper-sentinel), the panel members seem inclined to believe that the Game Changer List is the appropriate place for these cards.
 
-This seems to be a reasonable decision: these cards have enough power to change the pace of the game, generating a "soft lock" that makes opponents spend more resources on each play ([Augustin IV](https://scryfall.com/card/2x2/221/grand-arbiter-augustin-iv) sends regards), while giving resources to the controller.
+This seems to be a reasonable decision: these cards have enough power to change the pace of the game, creating a _"soft lock"_ that makes opponents spend more resources on each play ([Augustin IV](https://scryfall.com/card/2x2/221/grand-arbiter-augustin-iv) sends regards), while giving resources to the controller.
 
 > Is Commander more fun with Rhystic Study?
 
@@ -122,9 +123,9 @@ For many people, probably the answer is **yes**. As much as some ~like me~ despi
 
 [^2]: ["Do You Pay The One?" Wall Scroll](https://store.commandzone.com/products/do-you-pay-the-one-wall-scroll) Command Zone Store
 
-On this topic, I would like to give an honorable (or dishonorable?) mention to [Charismatic Conqueror](https://scryfall.com/card/lcc/70/charismatic-conqueror), another card with similar design. Although it doesn't generate a direct resource advantage, but rather battlefield presence with creature tokens, this card also generates constant interruption on each action. This type of mechanic naturally forces slower matches by adding a decision layer to each play and perhaps should stay away from lower brackets.
+On this topic, I would like to give an honorable (or dishonorable?) mention to [Charismatic Conqueror](https://scryfall.com/card/lcc/70/charismatic-conqueror), another card with similar design. Although it doesn't generate a direct resource advantage — rather, board presence with creature tokens, this card also generates constant interruption on each action. This type of mechanic naturally forces slower matches by adding a decision layer to each play and perhaps should stay away from lower brackets.
 
-### Thassa saturation
+### Thassa's Saturation
 
 One of the most common win conditions (if not the most common) in bracket 4 and cEDH decks is [Thassa's Oracle](https://scryfall.com/card/thb/73/thassas-oracle), mainly in combination with [Demonic Consultation](https://scryfall.com/card/mb2/181/demonic-consultation), [Tainted Pact](https://scryfall.com/card/sta/33/tainted-pact) or [Doomsday](https://scryfall.com/card/a25/88/doomsday). Whoever has never heard of this card probably hasn't had contact with more competitive formats — and that's okay.
 
@@ -172,7 +173,7 @@ With exponential _power creep_ and increasingly shorter time between sets, allow
 
 ## And how Commander stands in 2026
 
-The conclusion we can draw from this article and the changes to the format is that the panel members really tried to refine the brackets into something clearer and more objective, which is great. I believe the purpose of a group like this is to make the game more transparent, without complicating or limiting players' creativity.
+Overall, the conclusion we can draw from this article and the changes to the format is that the panel members really tried to refine the brackets into something clearer and more objective, which is great. I believe the purpose of a group like this is to make the game more transparent, without complicating or limiting players' creativity.
 
 It's positive to see that open ideas are being shared with the community before being implemented, avoiding unpleasant surprises whenever possible.
 

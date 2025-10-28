@@ -4,13 +4,14 @@ description: 'Um post opinativo sobre as ultimas mudanças no commander'
 pubDate: '31 Oct 2025'
 heroImage: '../../../assets/commander-brackets-update-october-2025.png'
 langLinks:
+  pt: 'commander-brackets-atualizacao-outubro-2025'
   en: 'commander-brackets-update-october-2025'
   es: 'commander-brackets-actualizacion-octubre-2025'
 ---
 
 Olá's pessoas! ✌️
 
-Poucos dias atrás, [Gavin Verhey](https://magic.wizards.com/en/news/archive?author=5m1u9U8j4A5Q8XLlASAsjK) publicou no site oficial da Wizards o artigo "[Commander Brackets Beta Update – October 21, 2025](https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-october-21-2025)". Com um ar de patch notes, esse artigo descreve algumas mudanças na filosofia dos brackets, atualizações na [Game Changer list](https://scryfall.com/search?q=is%3Agc) e deixa algumas perguntas em aberto para a comunidade.
+Poucos dias atrás, [Gavin Verhey](https://magic.wizards.com/en/news/archive?author=5m1u9U8j4A5Q8XLlASAsjK) publicou no site oficial da Wizards o artigo "[Commander Brackets Beta Update – October 21, 2025](https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-october-21-2025)". Com um ar de patch notes, esse artigo descreve algumas mudanças na filosofia dos brackets, atualizações na _[Game Changer list](https://scryfall.com/search?q=is%3Agc)_ e deixa algumas perguntas em aberto para a comunidade.
 
 > Este é um post de opinião, com uma visão de mesas casuais, principalmente brackets 2 e 3. Essa opinião não representa a Wizards ou qualquer comunidade específica, tampouco é uma verdade absoluta escrita em pedra.
 
@@ -31,13 +32,13 @@ A proposta atual diz que, antes de ganhar ou perder, você espera jogar por:
 
 Já ao jogar no bracket 5, você espera que a partida possa **acabar a qualquer momento**.
 
-> "Ah! Quer dizer que se a Wizards lançar uma carta quebrada com uma interação que acaba o jogo no turno um, ela vai ser válida no cEDH!?"
+> Ah! Quer dizer que se a Wizards lançar uma carta quebrada com uma interação que acaba o jogo no turno um, ela vai ser válida no cEDH!?
 
 Sim! Um sonoro e retumbante **SIM**. Não há nada de errado com isso — afinal, estamos falando de cEDH. Se a carta for tão problemática assim, ela será banida ~assim espero~.
 
 ## Enxugando a Game Changer List
 
-Recapitulando o que são Game Changers:
+Recapitulando o que são _Game Changers_:
 
 > Game Changers são cards que alteram de forma substancial o equilíbrio de uma partida de Commander, permitindo que os jogadores acumulem recursos, mudem a continuidade das partidas de uma forma que desagrade aos demais, impeçam outros jogadores de jogar, procurem pelos cards mais fortes de forma eficiente ou possuam comandantes que se destaquem de comandantes mais casuais. Esses cards indicam claramente que terá início um tipo diferente de jogo, e que os demais jogadores poderão não gostar de jogar contra eles.  
 > Decks de bracket 1 e 2 não permitem a utilização de Game Changers. Decks de bracket 3 podem ter até três Game Changers. Decks de bracket 4 e 5 permitem uma quantidade ilimitada de Game Changers.<br/> 
@@ -49,7 +50,7 @@ Sabendo disso, os membros do painel decidiram reduzir o volume de cards na lista
 
 ### Lendas poderosas na zona de comando
 
-Lendas que são poderosas apenas na zona de comando não são mais consideradas Game Changers. Com isso, [Kinnan, Bonder Prodigy](https://scryfall.com/card/iko/192/kinnan-bonder-prodigy), [Urza, Lord High Artificer](https://scryfall.com/card/cmm/130/urza-lord-high-artificer), [Winota, Joiner of Forces](https://scryfall.com/card/iko/216/winota-joiner-of-forces) e a temida [Yuriko, the Tiger's Shadow](https://scryfall.com/card/cmm/364/yuriko-the-tigers-shadow) saem da lista.
+Lendas que são poderosas apenas na zona de comando não são mais consideradas _Game Changers_. Com isso, [Kinnan, Bonder Prodigy](https://scryfall.com/card/iko/192/kinnan-bonder-prodigy), [Urza, Lord High Artificer](https://scryfall.com/card/cmm/130/urza-lord-high-artificer), [Winota, Joiner of Forces](https://scryfall.com/card/iko/216/winota-joiner-of-forces) e a temida [Yuriko, the Tiger's Shadow](https://scryfall.com/card/cmm/364/yuriko-the-tigers-shadow) saem da lista.
 
 > Tá liberado **Yuriko** no bracket 2!
 
@@ -67,21 +68,21 @@ Uma mudança relativamente simples, mas que reforça um ponto muito básico do C
 
 Agora que temos a expectativa de duração da partida, fica ainda mais claro que, se você fizer uma mágica de oito, nove ou dez manas, espera-se que seja uma mágica de grande impacto e **muito provavelmente** o jogo estará se encaminhando ao final. 
 
-Com isso em mente, [Expropriate](https://scryfall.com/card/cn2/30/expropriate), [Jin-Gitaxias, Core Augur](https://scryfall.com/card/ima/62/jin-gitaxias-core-augur), [Sway of the Stars](https://scryfall.com/card/bok/54/sway-of-the-stars) e [Vorinclex, Voice of Hunger](https://scryfall.com/card/ima/189/vorinclex-voice-of-hunger) estão deixando a Game Changer List. Essas cartas têm custo entre 8 e 10 manas; espera-se que, para conjurar uma delas, o jogador gaste todos os seus recursos ou dependa de uma sequência de cards que viabilize a jogada. Portanto, dado o investimento alto, é esperado que causem um impacto significativo.
+Com isso em mente, [Expropriate](https://scryfall.com/card/cn2/30/expropriate), [Jin-Gitaxias, Core Augur](https://scryfall.com/card/ima/62/jin-gitaxias-core-augur), [Sway of the Stars](https://scryfall.com/card/bok/54/sway-of-the-stars) e [Vorinclex, Voice of Hunger](https://scryfall.com/card/ima/189/vorinclex-voice-of-hunger) estão deixando a _Game Changer_ List. Essas cartas têm custo entre 8 e 10 manas; espera-se que, para conjurar uma delas, o jogador gaste todos os seus recursos ou dependa de uma sequência de cards que viabilize a jogada. Portanto, dado o investimento alto, é esperado que causem um impacto significativo.
 
 <div class="centering">
 <img class="card-image" width="336px" height="468px" alt="Vorinclex, Voice of Hunger" src="https://cards.scryfall.io/large/front/9/f/9fe3af8c-109d-486c-aa34-3f023abda5b7.jpg?1761053659" />
 </div>
 
-> "Quer dizer que vai ter deck de Vorinclex no bracket 2!?"
+> Quer dizer que vai ter deck de Vorinclex no bracket 2!?
 
-Na verdade, **não**. Embora não faça parte da lista, Vorinclex se encaixa na categoria de _"mass land denial"_ (negação de terrenos em massa), assim como [Armageddon](https://scryfall.com/card/a25/5/armageddon), e essa característica faz com que ele só possa entrar a partir do bracket 4. É importante entender esses pequenos nuances: o objetivo da Game Changer List não é ser uma redundância das regras já explícitas em cada bracket.
+Na verdade, **não**. Embora não faça parte da lista, Vorinclex se encaixa na categoria de _"mass land denial"_ (negação de terrenos em massa), assim como [Armageddon](https://scryfall.com/card/a25/5/armageddon), e essa característica faz com que ele só possa entrar a partir do bracket 4. É importante entender esses pequenos nuances: o objetivo da _Game Changer_ List não é ser uma redundância das regras já explícitas em cada bracket.
 
 ### Sem restrição de tutores para os brackets 1 e 2
 
 Essa é uma mudança de aplaudir em pé! Quem viu a primeira versão dos brackets se deparou com o termo "few tutors" nos brackets 1 e 2, mas o que exatamente significa "poucos tutores"? Quais cartas se encaixam como tutor? E, afinal, quanto é considerado pouco?
 
-Esse tipo de recomendação tão vaga é péssima e não deixa claro o que se deve esperar. Se uma carta for problemática para esses brackets, que vá direto para a Game Changer List. Por isso, só posso enxergar essa mudança com bons olhos.
+Esse tipo de recomendação tão vaga é péssima e não deixa claro o que se deve esperar. Se uma carta for problemática para esses brackets, que vá direto para a _Game Changer_ List. Por isso, só posso enxergar essa mudança com bons olhos.
 
 ## Discussões em aberto
 
@@ -108,15 +109,15 @@ The Command Zone -  Wall Scroll[^2]
 
 [Rhystic Study](https://scryfall.com/card/jmp/169/rhystic-study) é a icônica carta geradora de infinitos memes e interrupções de jogadas. Basta uma rápida pesquisa no Google Imagens por "Do you pay the one?" para entender que essa carta acumula amor e ódio por onde passa.
 
-Embora seja uma Game Changer, seu potencial de geração de valor constante ainda parece deixar o painel com a pulga atrás da orelha. Rhystic Study deveria ser banida?
+Embora seja uma _Game Changer_, seu potencial de geração de valor constante ainda parece deixar o painel com a pulga atrás da orelha. Rhystic Study deveria ser banida?
 
 <div class="centering">
 <img class="card-image" width="336px" height="468px" alt="Rhystic Study" src="https://cards.scryfall.io/large/front/d/6/d6914dba-0d27-4055-ac34-b3ebf5802221.jpg?1600698439" />
 </div>
 
-Embora detestável para alguns, assim como suas irmãs mais novas [Smothering Tithe](https://scryfall.com/card/cmm/57/smothering-tithe) e [Esper Sentinel](https://scryfall.com/card/mh2/12/esper-sentinel), os membros do painel parecem estar inclidados a acreditar que a Game Changer List seja o lugar adequado para essas cartas.
+Embora detestável para alguns, assim como suas irmãs mais novas [Smothering Tithe](https://scryfall.com/card/cmm/57/smothering-tithe) e [Esper Sentinel](https://scryfall.com/card/mh2/12/esper-sentinel), os membros do painel parecem estar inclinados a acreditar que a _Game Changer List_ seja o lugar adequado para essas cartas.
 
-Essa parece ser uma decisão razoável: essas cartas têm poder suficiente para mudar o ritmo do jogo, gerando uma "soft lock" que faz os oponentes gastar mais recursos em cada jogada ([Augustin IV](https://scryfall.com/card/2x2/221/grand-arbiter-augustin-iv) mandou lembranças), enquanto dão recursos ao controlador.
+Essa parece ser uma decisão razoável: essas cartas têm poder suficiente para mudar o ritmo do jogo, gerando uma _"soft lock"_ que faz os oponentes gastar mais recursos em cada jogada ([Augustin IV](https://scryfall.com/card/2x2/221/grand-arbiter-augustin-iv) mandou lembranças), enquanto dão recursos ao controlador.
 
 > Commander é mais divertido com Rhystic Study?
 
@@ -134,7 +135,7 @@ Uma das condições de vitória mais comuns (se não a mais comum) nos decks de 
 
 O ponto aqui é diferente do caso de Rhystic Study: a dúvida em aberto é o quanto esta carta está presente em mesas mais casuais e, caso esteja, o quão "opressiva" ela deve ser. Jogos de mesas casuais estão sendo interrompidos prematuramente por um combo de Thassa's Oracle?
 
-Embora seja um questionamento louvável do painel, o problema desse card parece ser um pouco diferente. Em mesas casuais, sem as outras peças do combo, Thassa's Oracle parece apenas tediosa. Lembrando que, por ser uma Game Changer, o mais casual possível é o bracket 3, então sua real presença está nos brackets 4 e 5, que ~ao menos na teoria~ não deveriam se preocupar tanto com jogadas explosivas e opressivas. Uma partida terminando no turno 6 com Thassa's Oracle é realmente algo preocupante?
+Embora seja um questionamento louvável do painel, o problema desse card parece ser um pouco diferente. Em mesas casuais, sem as outras peças do combo, Thassa's Oracle parece apenas tediosa. Lembrando que, por ser uma _Game Changer_, o mais casual possível é o bracket 3, então sua real presença está nos brackets 4 e 5, que ~ao menos na teoria~ não deveriam se preocupar tanto com jogadas explosivas e opressivas. Uma partida terminando no turno 6 com Thassa's Oracle é realmente algo preocupante?
 
 Se Thassa's Oracle for banida, o impacto maior será nos formatos competitivos, que talvez ganhem mais variedade. De qualquer forma, decisões sobre o futuro dessa carta deveriam estar alinhadas ao ambiente em que ela é usada, e não apenas a um bracket específico onde ela não parece ser a condição de vitória mais viável.
 
@@ -180,7 +181,7 @@ Mesmo com a impressão de que Commander ficou "meio de lado" nas últimas coleç
 
 Para finalizar deixo o resumo gráfico[^3] feito pela [Rachel Weeks](https://bsky.app/profile/wachelreeks.com).
 
-[^3]: [Post da Rachel Weeks no Bluesky](https://bsky.app/profile/wachelreeks.com/post/3m3ptspaivs27) compartilhando a atuaização dos brackets
+[^3]: [Post da Rachel Weeks no Bluesky](https://bsky.app/profile/wachelreeks.com/post/3m3ptspaivs27) compartilhando a atualização dos brackets
 
 ![Commander brackets Overview](../../../assets/cmd-brackets-251021.jpg)
 
