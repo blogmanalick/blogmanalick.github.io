@@ -21,6 +21,7 @@ const blog = defineCollection({
 				en: z.string().optional(),
 				es: z.string().optional(),
 			}).optional(),
+			bluesky: z.string().url().optional(),
 		}),
 });
 

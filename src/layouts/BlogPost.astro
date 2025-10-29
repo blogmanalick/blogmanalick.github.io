@@ -6,6 +6,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import LangSwitcher from '../components/LangSwitcher.astro';
 import "./BlogPost.css"
+import DiscussOnBluesky from '../components/DiscussOnBluesky.astro';
 
 type Props = CollectionEntry<'blog'>['data'] & {
 	langLinks?: {
@@ -13,9 +14,10 @@ type Props = CollectionEntry<'blog'>['data'] & {
 		en?: string;
 		es?: string;
 	};
+	bluesky?: string
 };
 
-const { title, description, pubDate, updatedDate, heroImage, langLinks } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, langLinks, bluesky } = Astro.props;
 
 // Determinar idioma atual
 const currentLang = Astro.url.pathname.startsWith('/en/') ? 'en' 
@@ -47,9 +49,11 @@ const currentLang = Astro.url.pathname.startsWith('/en/') ? 'en'
 						{langLinks && (
 							<LangSwitcher prefix='posts' langLinks={langLinks} />
 						)}
-						<hr />
+							<hr />
 					</div>
 					<slot />
+					<hr />
+					{bluesky && <DiscussOnBluesky href={bluesky} />}
 				</div>
 			</article>
 		</main>

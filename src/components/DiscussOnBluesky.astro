@@ -1,0 +1,36 @@
+---
+import { getCurrentLang, LANG_EN, LANG_ES, LANG_PT } from "../lib/lang"
+
+interface Props {
+	href: string;
+}
+
+const { href } = Astro.props;
+
+const translation = {
+  [LANG_PT]: {
+    label: 'Discuta no Bluesky',
+    title: 'Deixe-me saber o que você acha sobre esta publicação no Bluesky',
+  },
+  [LANG_EN]: {
+    label: 'Discuss on Bluesky',
+    title: 'Let me know what you think about this post on Bluesky',
+  },
+  [LANG_ES]: {
+    label: 'Debate en Bluesky',
+    title: 'Hazme saber tu opinión sobre esta publicación en Bluesky',
+  },
+} as const;
+
+const strings = translation[getCurrentLang(Astro.url)]
+
+---
+
+<a 
+  class="discuss-on-bluesky"
+  href={href}
+  title={strings.title}
+>
+  {strings.label}
+</a>
+ 
