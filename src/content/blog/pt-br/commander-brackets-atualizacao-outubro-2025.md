@@ -11,7 +11,7 @@ langLinks:
 
 Olá's pessoas! ✌️
 
-Poucos dias atrás, [Gavin Verhey](https://magic.wizards.com/en/news/archive?author=5m1u9U8j4A5Q8XLlASAsjK) publicou no site oficial da Wizards o artigo "[Commander Brackets Beta Update – October 21, 2025](https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-october-21-2025)". Com um ar de patch notes, esse artigo descreve algumas mudanças na filosofia dos brackets, atualizações na _[Game Changer list](https://scryfall.com/search?q=is%3Agc)_ e deixa algumas perguntas em aberto para a comunidade.
+Poucos dias atrás, [Gavin Verhey](https://magic.wizards.com/en/news/archive?author=5m1u9U8j4A5Q8XLlASAsjK) publicou no site oficial da Wizards o artigo "[Commander Brackets Beta Update – October 21, 2025](https://magic.wizards.com/en/news/announcements/commander-brackets-beta-update-october-21-2025)". Com um ar de patch notes, esse artigo descreve algumas mudanças na filosofia dos brackets, atualizações na _[Game Changer List](https://scryfall.com/search?q=is%3Agc)_ e deixa algumas perguntas em aberto para a comunidade.
 
 > Este é um post de opinião, com uma visão de mesas casuais, principalmente brackets 2 e 3. Essa opinião não representa a Wizards ou qualquer comunidade específica, tampouco é uma verdade absoluta escrita em pedra.
 
