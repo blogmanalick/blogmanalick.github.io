@@ -1,0 +1,33 @@
+---
+import { getCurrentLang, LANG_EN, LANG_ES, LANG_PT } from "../lib/lang"
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+	date: Date;
+}
+
+const { date } = Astro.props;
+
+const translation = {
+  [LANG_PT]: {
+    label: 'Atualizado em',
+    locale: 'pt-BR',
+  },
+  [LANG_EN]: {
+    label: 'Last updated on',
+    locale: 'en',
+  },
+  [LANG_ES]: {
+    label: 'Actualizado el',
+    locale: 'es',
+  },
+} as const;
+
+const strings = translation[getCurrentLang(Astro.url)]
+
+---
+
+<div class="last-updated-on">
+	{strings.label} <FormattedDate date={date} locale={strings.locale} />
+</div>
+
