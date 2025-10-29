@@ -7,6 +7,7 @@ langLinks:
   pt: 'commander-brackets-atualizacao-outubro-2025'
   en: 'commander-brackets-update-october-2025'
   es: 'commander-brackets-actualizacion-octubre-2025'
+bluesky: https://bsky.app/profile/manalick.com/post/3m4dt2qduqs2w
 ---
 
 Olá's pessoas! ✌️
