@@ -3,13 +3,17 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Mana Lick. All rights reserved.
+	<p>&copy; {today.getFullYear()} Mana Lick. All rights reserved.</p>
 </footer>
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
-		background: rgb(var(--bg-primary));
 		color: rgb(var(--gray));
 		text-align: center;
+	}
+
+	footer p:first-child {
+		padding-top: 1.5rem;
+		border-top: 1px solid rgba(var(--gray-light));
 	}
 </style>
