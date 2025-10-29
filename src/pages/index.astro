@@ -5,7 +5,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '../consts';
+import { SITE_URL } from '../consts';
 import '../styles/index.css';
 
 const locale = 'pt-br';
@@ -17,18 +17,13 @@ const posts = (await getCollection('blog', ({ id }) => id.startsWith(`${locale}/
 <!doctype html>
 <html lang="pt-BR">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead description="Conteúdo longo, denso e bem temperado — como o Commander merece."/>
 		<link rel="alternate" hreflang="en" href={`${SITE_URL}/en/`} />
 		<link rel="alternate" hreflang="es" href={`${SITE_URL}/es/`}/>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<div class="lang-switcher">
-				<span>🌐</span>
-				<a href="/en/">English</a>
-				<a href="/es/">Español</a>
-			</div>
 			<section>
 				<ul class="post-list">
 					{

@@ -5,7 +5,8 @@
  */
 
 :root {
-	--accent: #8B5CF6;
+	--aux: #8B5CF6;
+	--accent:  #A78BFA;
 	--accent-dark: #6D28D9;
 	--accent-light: #A78BFA;
 	--black: 230, 230, 235;
@@ -19,10 +20,11 @@
 		0 2px 6px rgba(139, 92, 246, 15%), 0 8px 24px rgba(139, 92, 246, 20%), 0 16px 32px
 		rgba(139, 92, 246, 25%);
 	--border-radius: 4px;
+	--content-width: 1200px;
 }
 
 body {
-	font-family: "Lora", serif;
+	font-family: "Merriweather", serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -77,9 +79,7 @@ a:hover {
 p {
 	margin-bottom: 1em;
 }
-.prose p {
-	margin-bottom: 2em;
-}
+
 textarea {
 	width: 100%;
 	font-size: 16px;
@@ -146,3 +146,22 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+.centering {
+	display: flex;
+	align-content: center;
+    justify-content: center;
+}
+
+.card-image {
+	border-radius: 18px;
+	width: 336px;
+	height: 468px;
+	transition: transform .2s;
+}
+
+.card-image:hover {
+	transform: scale(1.25);
+	box-shadow: var(--box-shadow);
+}
+

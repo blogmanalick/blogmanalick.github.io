@@ -1,0 +1,74 @@
+---
+import { DEFAULT_LANG, getCurrentLang, LANG_NAME, type LangKey } from '../lib/lang';
+
+type Props = {
+	langLinks?: Partial<Record<LangKey, string>>
+	prefix?: string;
+};
+
+const { langLinks, prefix } = Astro.props;
+
+const getLangHref = (lang: string, slug: string) => {
+  const base = lang === DEFAULT_LANG ? '/' : `/${lang}/`
+  if(!prefix) return `${base}${slug}`;
+	return `${base}${prefix}/${slug}`;
+};
+
+const currentLang = getCurrentLang(Astro.url);
+const empty = { pt: '', en: '', es: '' }
+---
+
+<div class="lang-switcher">
+	<span>🌐</span>
+	{
+		Object.entries(langLinks ?? empty).map(([lang, slug]) => {
+			const href = getLangHref(lang, slug);
+			return (
+				<a 
+					href={href}
+					class={currentLang === lang ? 'active' : ''}
+				>
+					{LANG_NAME[lang as LangKey]}
+				</a>
+			);
+		})
+	}
+</div>
+
+<style>
+	.lang-switcher {
+		margin-bottom: 2em;
+		padding: 0 1em;
+		background: rgba(var(--gray), 5%);
+		border-radius: var(--border-radius);
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		flex-wrap: wrap;
+	}
+	.lang-switcher span {
+		margin-right: 0.5em;
+	}
+	.lang-switcher a {
+		padding: 1rem 1rem calc(1rem - 4px) 1rem;
+		text-decoration: none;
+		color: rgb(var(--gray-dark))
+	}
+
+	.lang-switcher a.active {
+		border-bottom: 4px solid var(--accent);
+	}
+
+	/* Estilos específicos para posts (dentro de .prose) */
+	:global(.prose) .lang-switcher {
+		margin-bottom: 1em;
+	}
+	:global(.prose) .lang-switcher a {
+		color: rgb(var(--black));
+	}
+	:global(.prose) .lang-switcher a:hover,
+	:global(.prose) .lang-switcher a.active {
+		background: rgba(var(--accent), 10%);
+	}
+</style>
+
