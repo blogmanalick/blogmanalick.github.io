@@ -1,4 +1,6 @@
 ---
+import { LANG_EN, LANG_ES, LANG_PT } from '../lib/lang';
+
 interface Props {
 	date: Date;
 	locale?: string;
@@ -13,17 +15,17 @@ const localeFormats: Record<string, Intl.DateTimeFormatOptions> = {
 		month: 'long',
 		day: 'numeric',
 	},
-	'pt': {
+	[LANG_PT]: {
 		year: 'numeric',
 		month: 'long',
 		day: 'numeric',
 	},
-	'en': {
+	[LANG_EN]: {
 		year: 'numeric',
 		month: 'short',
 		day: 'numeric',
 	},
-	'es': {
+	[LANG_ES]: {
 		year: 'numeric',
 		month: 'long',
 		day: 'numeric',

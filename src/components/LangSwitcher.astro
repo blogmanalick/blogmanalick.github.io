@@ -1,26 +1,20 @@
 ---
+import { DEFAULT_LANG, getCurrentLang, LANG_NAME, type LangKey } from '../lib/lang';
+
 type Props = {
-	langLinks?: { pt?: string, en?: string, es?: string };
-  prefix?: string;
+	langLinks?: Partial<Record<LangKey, string>>
+	prefix?: string;
 };
 
 const { langLinks, prefix } = Astro.props;
 
-const getCurrentLang = () => {
-	const pathname = Astro.url.pathname;
-	if (pathname.startsWith('/en/')) return 'en';
-	if (pathname.startsWith('/es/')) return 'es';
-	return 'pt';
-};
-
 const getLangHref = (lang: string, slug: string) => {
-  const base = lang === 'pt' ? '/' : `/${lang}/`
+  const base = lang === DEFAULT_LANG ? '/' : `/${lang}/`
   if(!prefix) return `${base}${slug}`;
 	return `${base}${prefix}/${slug}`;
 };
 
-const currentLang = getCurrentLang();
-const labels = { pt: 'Português', en: 'English', es: 'Español' };
+const currentLang = getCurrentLang(Astro.url);
 const empty = { pt: '', en: '', es: '' }
 ---
 
@@ -34,7 +28,7 @@ const empty = { pt: '', en: '', es: '' }
 					href={href}
 					class={currentLang === lang ? 'active' : ''}
 				>
-					{labels[lang as keyof typeof labels]}
+					{LANG_NAME[lang as LangKey]}
 				</a>
 			);
 		})
