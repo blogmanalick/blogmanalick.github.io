@@ -15,6 +15,12 @@ export const LANG_NAME = {
     [LANG_ES]: 'Español',
 } as const;
 
+export const LOCALE = {
+    [LANG_PT]: 'pt-BR',
+    [LANG_EN]: 'en',
+    [LANG_ES]: 'es',
+} as const;
+
 export type LangKey = 
     | typeof LANG_PT
     | typeof LANG_EN
