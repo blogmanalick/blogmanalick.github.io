@@ -1,7 +1,7 @@
 ---
 title: 'Commander Brackets - October 2025 Update'
 description: 'An opinion post about the latest changes in commander'
-pubDate: '31 Oct 2025'
+pubDate: '29 Oct 2025'
 heroImage: '../../../assets/commander-brackets-update-october-2025.png'
 langLinks:
   pt: 'commander-brackets-atualizacao-outubro-2025'

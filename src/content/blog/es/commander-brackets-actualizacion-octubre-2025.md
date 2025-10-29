@@ -1,7 +1,7 @@
 ---
 title: 'Commander Grupos - Actualización Octubre 2025'
 description: 'Un post de opinión sobre los últimos cambios en commander'
-pubDate: '31 Oct 2025'
+pubDate: '29 Oct 2025'
 heroImage: '../../../assets/commander-brackets-update-october-2025.png'
 langLinks:
   pt: 'commander-brackets-atualizacao-outubro-2025'
