@@ -21,6 +21,8 @@ export const LOCALE = {
     [LANG_ES]: 'es',
 } as const;
 
+export const SUPPORTED_LAGS = [LANG_PT, LANG_EN, LANG_ES] as const;
+
 export type LangKey = 
     | typeof LANG_PT
     | typeof LANG_EN

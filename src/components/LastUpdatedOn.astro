@@ -1,5 +1,5 @@
 ---
-import { getCurrentLang, LANG_EN, LANG_ES, LANG_PT } from "../lib/lang"
+import { getCurrentLang, LANG_EN, LANG_ES, LANG_PT, LOCALE } from "../lib/lang"
 import FormattedDate from './FormattedDate.astro';
 
 interface Props {
@@ -11,20 +11,19 @@ const { date } = Astro.props;
 const translation = {
   [LANG_PT]: {
     label: 'Atualizado em',
-    locale: 'pt-BR',
+    locale: LOCALE[LANG_PT],
   },
   [LANG_EN]: {
     label: 'Last updated on',
-    locale: 'en',
+    locale: LOCALE[LANG_EN],
   },
   [LANG_ES]: {
     label: 'Actualizado el',
-    locale: 'es',
+    locale: LOCALE[LANG_ES],
   },
 } as const;
 
-const strings = translation[getCurrentLang(Astro.url)]
-
+const strings = translation[getCurrentLang(Astro.url)];
 ---
 
 <div class="last-updated-on">

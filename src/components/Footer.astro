@@ -1,9 +1,26 @@
 ---
+import { SITE_TITLE } from '../consts';
+import { getCurrentLang, LANG_EN, LANG_ES, LANG_PT } from '../lib/lang';
+
 const today = new Date();
+
+const translation = {
+	[LANG_PT]: {
+		rights: 'Todos os direitos reservados.',
+	},
+	[LANG_EN]: {
+		rights: 'All rights reserved.',
+	},
+	[LANG_ES]: {
+		rights: 'Todos los derechos reservados.',
+	},
+} as const;
+
+const strings = translation[getCurrentLang(Astro.url)];
 ---
 
 <footer>
-	<p>&copy; {today.getFullYear()} Mana Lick. All rights reserved.</p>
+	<p>&copy; {today.getFullYear()} {SITE_TITLE}. {strings.rights}</p>
 </footer>
 <style>
 	footer {
@@ -12,8 +29,5 @@ const today = new Date();
 		text-align: center;
 	}
 
-	footer p:first-child {
-		padding-top: 1.5rem;
-		border-top: 1px solid rgba(var(--gray-light));
-	}
+	footer p:first-child { padding-top: 1.5rem; }
 </style>
