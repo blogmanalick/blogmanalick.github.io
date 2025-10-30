@@ -1,12 +1,12 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
+import DiscussOnBluesky from '../components/DiscussOnBluesky.astro';
 import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import LangSwitcher from '../components/LangSwitcher.astro';
-import DiscussOnBluesky from '../components/DiscussOnBluesky.astro';
-import UpdatedDate from '../components/UpdatedDate.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import LastUpdatedOn from '../components/LastUpdatedOn.astro';
 import { getCurrentLang, LOCALE } from '../lib/lang';
 
 import "./BlogPost.css";
@@ -14,9 +14,8 @@ import "./BlogPost.css";
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, langLinks, bluesky } = Astro.props;
-const locale = LOCALE[getCurrentLang(Astro.url)]
+const locale = LOCALE[getCurrentLang(Astro.url)];
 ---
-
 <html lang={locale}>
 	<head>
 		<BaseHead title={title} description={description} image={heroImage} />
@@ -30,7 +29,7 @@ const locale = LOCALE[getCurrentLang(Astro.url)]
 						<h1>{title}</h1>
 						<div class="date">
 							<FormattedDate date={pubDate} locale={locale} />
-							{updatedDate && <UpdatedDate date={updatedDate} />}
+							{updatedDate && <LastUpdatedOn date={updatedDate} />}
 						</div>
 						{langLinks && (
 							<LangSwitcher prefix='posts' langLinks={langLinks} />
@@ -38,7 +37,6 @@ const locale = LOCALE[getCurrentLang(Astro.url)]
 						<hr />
 					</div>
 					<slot />
-					<hr />
 					{bluesky && <DiscussOnBluesky href={bluesky} />}
 				</div>
 			</article>

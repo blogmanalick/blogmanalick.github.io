@@ -2,10 +2,10 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
-	// Load Markdown and MDX files from pt-br (default), en, and es directories
+	// Load Markdown and MDX files from pt (default), en, and es directories
 	loader: glob({
 		base: './src/content/blog',
-		pattern: '{pt-br,en,es}/**/*.{md,mdx}',
+		pattern: '{pt,en,es}/**/*.{md,mdx}',
 	}),
 	// Type-check frontmatter using a schema
 	schema: ({ image }) =>

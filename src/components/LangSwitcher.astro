@@ -1,5 +1,5 @@
 ---
-import { DEFAULT_LANG, getCurrentLang, LANG_NAME, type LangKey } from '../lib/lang';
+import { getCurrentLang, LANG_BASE_PATH, LANG_NAME, type LangKey } from '../lib/lang';
 
 type Props = {
 	langLinks?: Partial<Record<LangKey, string>>
@@ -8,31 +8,26 @@ type Props = {
 
 const { langLinks, prefix } = Astro.props;
 
-const getLangHref = (lang: string, slug: string) => {
-  const base = lang === DEFAULT_LANG ? '/' : `/${lang}/`
+const getLangHref = (lang: LangKey, slug: string) => {
+  const base = LANG_BASE_PATH[lang];
   if(!prefix) return `${base}${slug}`;
 	return `${base}${prefix}/${slug}`;
 };
 
 const currentLang = getCurrentLang(Astro.url);
-const empty = { pt: '', en: '', es: '' }
 ---
 
 <div class="lang-switcher">
 	<nav>
-		{
-			Object.entries(langLinks ?? empty).map(([lang, slug]) => {
-				const href = getLangHref(lang, slug);
-				return (
-					<a 
-						href={href}
-						class={currentLang === lang ? 'active' : ''}
-						data-lang={lang}
-					>
-						{LANG_NAME[lang as LangKey]}
-					</a>
-				);
-			})
+		{ langLinks && Object.entries(langLinks).map(([lang, slug]) => (
+				<a 
+					href={getLangHref(lang as LangKey, slug)}
+					class={currentLang === lang ? 'active' : ''}
+					data-lang={lang}
+				>
+					{LANG_NAME[lang as LangKey]}
+				</a>
+			))
 		}
 	</nav>
 </div>

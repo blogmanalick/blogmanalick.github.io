@@ -1,50 +1,10 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
-import BaseHead from '../../components/BaseHead.astro';
-import Footer from '../../components/Footer.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
-import Header from '../../components/Header.astro';
-import { SITE_URL } from '../../consts';
-import '../../styles/index.css';
+import BlogIndex from '../../layouts/BlogIndex.astro';
+import { LANG_ES } from '../../lib/lang';
 
-const locale = 'es';
-const posts = (await getCollection('blog', ({ id }) => id.startsWith(`${locale}/`))).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const posts = await getCollection('blog', ({ id }) => id.startsWith(`${LANG_ES}/`));
 ---
 
-<!doctype html>
-<html lang="es">
-	<head>
-		<BaseHead description="Contenido largo, profundo y bien sazonado — como se merece el Commander." />
-		<link rel="alternate" hreflang="pt-br" href={`${SITE_URL}/`} />
-		<link rel="alternate" hreflang="en" href={`${SITE_URL}/en/`} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<ul class="post-list">
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/es/posts/${post.id.replace('es/', '')}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} locale="es" />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BlogIndex lang={LANG_ES} posts={posts} />
 
